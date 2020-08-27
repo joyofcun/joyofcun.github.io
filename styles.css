@@ -2,30 +2,31 @@
 
 /* font-family: 'Big Shoulders Text', cursive; */
 
-.nav-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    width: 100%;
-    padding: 0;
-}
+.nav-flex-col ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+.nav-flex-col li {
+	float: left;
+  }
+  
+.nav-flex-col li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.nav-flex-col li a:hover {
+	background-color: #111;
+  }
 
-.nav-flex-row li {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 20px 15px;
-}
-
-.nav-flex-row li a {
-    font-family: 'Big Shoulders Text', cursive;
-    color: #ffffff;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 300;
-}
 
 .section-intro {
     height: 820px;
