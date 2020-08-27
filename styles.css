@@ -112,15 +112,6 @@ li a:hover {
     background-color: #f3f3f3c0;
     padding: 50px 30px;
 }
-	
-
-.location-section {
-	display: flex;
-	align-items: center;
-	text-align: center;
-    background-color: #ffffff;
-    padding: 30px 20px;
-}
 
 .link-to-book {
     color: #ffffff;
@@ -142,7 +133,7 @@ a.link-to-book:hover {
     margin: auto;
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.8em;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .carousel-inner {
@@ -212,7 +203,7 @@ a.link-to-book:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) and (max-width: 800px) {
     .section-intro {
         height: 300px;
     }
@@ -249,7 +240,7 @@ a.link-to-book:hover {
     }
 
     .opening-time p span,
-    .contact-adress p span {
+	.contact-adress p span, {
         font-size: 15px;
         text-align: center;
     }
