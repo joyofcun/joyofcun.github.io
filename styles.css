@@ -59,6 +59,7 @@ li a:hover {
 
 .menuitems {
 	height: 300px;
+	background-color: #ffffff;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -68,6 +69,13 @@ li a:hover {
 
 .about-section {
     display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.news-section {
+	display: flex;
     align-items: center;
     background-color: #f3f3f3c0;
     padding: 50px 30px;
