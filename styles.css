@@ -81,11 +81,45 @@ li a:hover {
     padding: 50px 30px;
 }
 
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	  .menuitems{
+		display: flex;
+		align-items: center;
+		background-color: #f3f3f3c0;
+		padding: 50px 30px;
+	  }
+	  .column {
+			width: 100%;
+	  }
+	  * {
+		box-sizing: border-box;
+	  }
+	  
+	  /* Create three equal columns that floats next to each other */
+	  .column {
+		float: left;
+		width: 33.33%;
+		padding: 10px;
+		height: 300px; /* Should be removed. Only for demonstration */
+	  }
+	  
+	  /* Clear floats after the columns */
+	  .row:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+	}
+	
+
 .location-section {
 	display: flex;
-    align-items: center;
+	align-items: center;
+	text-align: center;
     background-color: #ffffff;
-    padding: 50px 30px;
+    padding: 30px 20px;
 }
 
 .link-to-book {
