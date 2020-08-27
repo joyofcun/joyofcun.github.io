@@ -73,19 +73,19 @@ li a:hover {
 }
 
 #food {
-	background-image: url("Assets/Party-Finger-Food-Eat-Vegetarian-Birthday-Burger-4614022.jpg");
+	background-image: url("Assets/food.jpg");
 	background-size: cover;
 	padding: 100px;
 }
 
 #drink {
-	background-image: url("Assets/Party-Finger-Food-Eat-Vegetarian-Birthday-Burger-4614022.jpg");
+	background-image: url("Assets/drink.jpg");
 	background-size: cover;
 	padding: 100px;
 }
 
 #dessert {
-	background-image: url("Assets/Party-Finger-Food-Eat-Vegetarian-Birthday-Burger-4614022.jpg");
+	background-image: url("Assets/dessert.jpg");
 	background-size: cover;
 	padding: 100px;
 }
