@@ -81,6 +81,13 @@ li a:hover {
     padding: 50px 30px;
 }
 
+.location-section {
+	display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
 .link-to-book {
     color: #ffffff;
     display: block;
