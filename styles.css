@@ -65,7 +65,7 @@ li a:hover {
 	font-size: 20px;
 }
 	
-@media (min-width: 992px) {
+@media (min-width:577px) and (max-width: 800px) {
 	.columnitem {
 		padding-left: 0;
 		padding-right: 0;
@@ -96,7 +96,6 @@ li a:hover {
 	color: #2c2c2c;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
-	/* For IE8 and earlier */
 }
 
 .about-section {
@@ -136,6 +135,15 @@ a.link-to-book:hover {
     text-transform: none;
 }
 
+.news-section p,
+.news-section h3 {
+	text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: none;
+}
 .carousel-inner {
     height: 700px;
 }
