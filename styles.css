@@ -69,6 +69,7 @@ li a:hover {
 	.columnitem {
 		padding-left: 0;
 		padding-right: 0;
+		width: 30%;
 	}
 }
 
