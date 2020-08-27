@@ -77,6 +77,11 @@ li a:hover {
 	background-color: #F15A29;
 }
 
+.menu-items {
+	padding-top: 41px;
+	padding-bottom: 45px;
+	background-color: #F15A29;
+}
 #food {
 	background-image: url("Assets/burger.jpg");
 	background-size: cover;
