@@ -80,26 +80,6 @@ li a:hover {
     background-color: #f3f3f3c0;
     padding: 50px 30px;
 }
-
-  
-@media screen and (max-width: 600px) {
-	.menuitems{
-	   display: flex;
-	   align-items: center;
-	   background-color: #f3f3f3c0;
-       padding: 50px 30px;
-	}
-	.column {
-		float: left;
-		width: 33.33%;
-		padding: 10px;
-	}
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	}
 	
 
 .location-section {
