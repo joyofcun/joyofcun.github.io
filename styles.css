@@ -57,14 +57,51 @@ li a:hover {
     flex: 1;
 }
 
-.menuitems {
-	height: 300px;
-	background-color: #ffffff;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 992px) {
+	.col-md-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.happyhour {
+	padding-top: 41px;
+	padding-bottom: 45px;
+	background-color: lightgrey;
+	margin-bottom: 0;
+}
+
+.partytime {
+	padding-top: 41px;
+	padding-bottom: 45px;
+	background-color: #F15A29;
+}
+
+#food {
+	background-image: url("Assets/burger.jpg");
+	background-size: cover;
+	padding: 100px;
+}
+
+#drink {
+	background-image: url("Assets/coffee.jpg");
+	background-size: cover;
+	padding: 100px;
+}
+
+#dessert {
+	background-image: url("Assets/burger.jpg");
+	background-size: cover;
+	padding: 100px;
+}
+
+#dinner:hover,
+#lunch:hover,
+#breakfast:hover {
+	color: #2c2c2c;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	/* For IE8 and earlier */
 }
 
 .about-section {
