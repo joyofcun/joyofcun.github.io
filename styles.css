@@ -238,18 +238,3 @@ a.link-to-book:hover {
 	}
 }
   
-  .first {
-	background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
-  }
-  
-  .second {
-	background-image: url("http://dash.ga.co/assets/secondcourse.jpg");
-  }
-  
-  .dessert {
-	background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
-  }
-  
-  .price {
-	float: right;
-  }
