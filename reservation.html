@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <link rel="stylesheet" href="styles.css">
-    
-        <title>Reservation</title>
-         
-      </head>
-      <body>
-        
-        
-      <nav>
-        <ul>
-          <li>
-            <div class="logo">
-            <img src="Assets/logo.png" alt="Company Logo">
-            </div>
-          </li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#reservation">Reservation</a></li>
-        </ul>
-      </nav>
-    
-      <section class="section-intro">
-        <header>
-          <h1>Fooddddie</h1>
-        </header>
-        <div class="link-to-book-wrapper">
-          <a class="link-to-book" href="#reservations">Book a table</a>
-        </div>
-      </section>
-    
-      <section class="about-section">
-        <article>
-          <h3>
-              Section for the text why your restaurant is the best.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            A quos, voluptatum illum mollitia dolores libero placeat 
-            nesciunt quasi adipisci impedit!Lorem ipsum dolor sit, 
-            amet consectetur adipisicing elit. 
-            A quos, voluptatum illum mollitia dolores libero placeat 
-            nesciunt quasi adipisci impedit!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            A quos, voluptatum illum mollitia dolores libero placeat 
-            nesciunt quasi adipisci impedit!Lorem ipsum dolor sit.
-          </p>
-        </article>
-      </section>
-    
-      <div class="container">
-        <div class="row-flex">
-          <div class="flex-column-form">
-            <h3>
-              Make a booking
-            </h3>
-          <form class="media-centered">
-              <div class="form-group">
-                <p>
-                  Please leave your number we will call to make a reservation
-                </p>
-                <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-          </div>
-          <div class="opening-time">
-            <h3>
-              Opening times
-            </h3>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Joy of Cun</title>
+
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+    </script>
+     
+  </head>
+  <body>
+     
+    <nav>
+      <ul class="nav-flex-row">
+        <li class="nav-item">
+          <a href="reservation.html">Reservation</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="#news">News</a>
+        </li>
+      </ul>
+    </nav>
+
+  <section class="section-intro">
+    <header>
+      <h1>
+      <p>Delivering Wow</p>
+      <p>Sharing Happiness</p>
+    </h1>
+    </header>
+    <div class="link-to-book-wrapper">
+      <a class="link-to-book" href="#reservations">Book a table</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <article>
+      <h3>
+          Welcome to Haukai Restaurant
+      </h3>
+      <p>
+        With our mission of "Delivering Wow, Sharing Happiness," we have been striving every day to provide the best dining experience to all of our dear guests. 
+        A restaurant should not be a place to simply have a meal. We truly want every guest to leave happy with our food, service, and environment that delivers the "Wow" factor. 
+        We continue to evolve and improve every day so that we can always fulfill our mission of "Delivering Wow, Sharing Happiness" to every guest.
+      </p>
+    </article>
+  </section>
+
+  
+
+  <div class="container">
+    <div class="row-flex">
+      <div class="flex-column-form">
+        <h3>
+          Book a Table
+        </h3>
+      <form class="media-centered">
+          <div class="form-group">
             <p>
-             <span>Monday—Thursday: 08:00 — 22:00</span> 
-             <span>Friday—Saturday: 09:00 — 23:00 </span>
-             <span>Sunday: 10:00 — 17:00</span>
+              Please fill out your personal information below:
             </p>
-          </div>
-        </div>
-        </div>
+            <p>
+                <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name">
+            </p>
+            <p>
+                <input type="emailaddress" class="form-control" id="exampleInputAddress" aria-describedby="emailaddressHelp" placeholder="Enter your Email Address">
+            </p>
+            <p>
+                <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number">
+            </p>
+            <p>
+                <input type="note" class="form-control" id="exampleNote1" aria-describedby="noteHelp" placeholder="Do you have any note for us">
+            </p>
+            <p>
+                Date: <input type="text" id="datepicker">
+            </p>
+          </div>   
+          <p>   
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </p>
+      </form>
+      </div>
+    </div>
+    </div>
+ 
   </body>
-  </html>
+
+  <footer>
+    <p>© Haukai Restaurant 2020<br>
+  </footer>
+  
+</html> 
