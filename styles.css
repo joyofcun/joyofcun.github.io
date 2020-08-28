@@ -237,6 +237,35 @@ a.link-to-book:hover {
         text-align: center;
 	}
 }
-body, html {height: 100%}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
-.menu {display: none}
+*, *:after, *:before {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .container {
+	width: 50%;
+	margin: 1em auto;
+	border: 1px solid #ddd;
+	padding: .3em .6em;
+	
+  }
+  
+  .group-header {
+	float: right;
+	font-weight: 700;
+	width: 20%;
+	margin: .7em 0 1em 0;
+  }
+  
+  h3 {
+	position: relative;
+	font-weight: 700;
+	margin: .7em 0 1em 0;
+  }
+  .dots {
+	  width: 40%;
+	  border-bottom: 2px dotted #ccc;
+	  margin-top: .8em;
+   }
+  
+  
