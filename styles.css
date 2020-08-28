@@ -57,6 +57,31 @@ li a:hover {
     flex: 1;
 }
 
+.section-middle {
+    height: 820px;
+    background-image: url(Assets/Cheese-Salad-Goat-Cheese-Starter-Figs-Food-1672505.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-middle h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-middle header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-section {
     display: flex;
     align-items: center;
@@ -106,9 +131,6 @@ a.link-to-book:hover {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.8em;
     text-transform: none;
-}
-.carousel-inner {
-    height: 700px;
 }
 
 .row-flex {
@@ -210,10 +232,8 @@ a.link-to-book:hover {
         font-size: 15px;
     }
 
-    .opening-time p span,
-	.contact-adress p span, {
-        font-size: 15px;
+    .opening-time p span, {
+		font-size: 15px;
         text-align: center;
-    }
-
+	}
 }
