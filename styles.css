@@ -228,6 +228,9 @@ a.link-to-book:hover {
 		font-size: 15px;
         text-align: center;
 	}
+	.menu {
+		height: 300px
+	  }
 }
   
   .menu {
@@ -265,7 +268,7 @@ a.link-to-book:hover {
   }
   
   footer {
-	position: center;
+	text-align: center;
   }
 
   .locations {
