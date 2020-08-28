@@ -233,6 +233,10 @@ a.link-to-book:hover {
 	margin: .7em 0 1em 0;
   }
 
+  .container {
+	  align-items: center;
+  }
+
   .bookatable {
 	width: 50%;
 	margin: 1em auto;
