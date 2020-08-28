@@ -89,9 +89,6 @@ li a:hover {
     padding: 50px 30px;
 }
 
-.carousel-inner {
-    height: 700px;
-}
 
 .news-section {
 	display: flex;
@@ -117,14 +114,14 @@ a.link-to-book:hover {
 	text-align: center;
     width: 60%;
     margin: auto;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-transform: none;
 }
 .about-section h3 {
     text-align: center;
     width: 60%;
     margin: auto;
-    font-size: 1em;
+    font-size: 1.9em;
     text-transform: none;
 }
 
@@ -132,14 +129,14 @@ a.link-to-book:hover {
 	text-align: center;
     width: 60%;
     margin: auto;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-transform: none;	
 }
 .news-section h3 {
 	text-align: center;
     width: 60%;
     margin: auto;
-    font-size: 1em;
+    font-size: 1.9em;
     text-transform: none;
 }
 
