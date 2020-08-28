@@ -241,8 +241,6 @@ a.link-to-book:hover {
   .container {
 	width: 50%;
 	margin: 1em auto;
-	border: 1px solid #ddd;
-	padding: .3em .6em;
   }
   
   .group-header {
