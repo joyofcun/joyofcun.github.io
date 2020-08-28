@@ -253,6 +253,11 @@ a.link-to-book:hover {
 	margin: .7em 0 1em 0;
   }
 
+  .bookatable {
+	width: 50%;
+	margin: 1em auto;
+  }
+
   
   
 	
