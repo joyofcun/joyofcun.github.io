@@ -162,19 +162,23 @@ a.link-to-book:hover {
 @media screen and (max-width: 600px) {
     .section-intro {
         height: 300px;
-    }
+	}
+	
+	.section-middle {
+		height: 300px;
+	}
 
     .about-section {
         padding: 30px;
 	}
-	
-	.section-middle {
-		height: 300px
-	}
 
     .section-intro h1 {
         font-size: 2em;
-    }
+	}
+	
+	.section-middle h1 {
+		font-size: 2em;
+	}
 
     .about-section p {
 		font-size: 10px;
