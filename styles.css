@@ -237,35 +237,47 @@ a.link-to-book:hover {
         text-align: center;
 	}
 }
-*, *:after, *:before {
-	box-sizing: border-box;
+
+body {
 	font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  .container {
-	width: 50%;
-	margin: 1em auto;
-	border: 1px solid #ddd;
-	padding: .3em .6em;
+	}
+
+	table {
+	width: 90%;
+	margin:100px auto;
+	table-layout:fixed;
+	border-collapse: collapse;
+	}
+
+	td {
+	padding:1em 0 0 0;
+	vertical-align:bottom;
+	background-image:radial-gradient(black 1px, white 0px);
+	background-size: 8px 8px;
+	background-repeat:repeat-x;
+	background-position: left bottom;
+	}
 	
-  }
-  
-  .group-header {
-	float: right;
+	td span{
+   	background-color:#fff;
+	}
+	
+	td:first-child {
+	text-align: left;
 	font-weight: 700;
-	width: 20%;
-	margin: .7em 0 1em 0;
-  }
-  
-  h3 {
-	position: relative;
-	font-weight: 700;
-	margin: .7em 0 1em 0;
-  }
-  .dots {
-	  width: 40%;
-	  border-bottom: 2px dotted #ccc;
-	  margin-top: .8em;
-   }
+	}
+	
+	td:first-child span{
+	padding-right:.25em;
+	}
+
+  	td:last-child {
+	text-align:right;
+	width:3em;
+  	}
+  	
+  	td:last-child span{
+	padding-left:.25em;
+	}
   
   
