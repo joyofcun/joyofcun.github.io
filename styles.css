@@ -112,21 +112,33 @@ a.link-to-book:hover {
     text-decoration: none;
 }
 
-.about-section p,
-.about-section h3 {
-    text-align: center;
+.about-section p {
+	text-align: center;
     width: 60%;
     margin: auto;
     font-size: 1.8em;
     text-transform: none;
 }
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 1em;
+    text-transform: none;
+}
 
-.news-section p,
-.news-section h3 {
+.news-section p {
 	text-align: center;
     width: 60%;
     margin: auto;
     font-size: 1.8em;
+    text-transform: none;	
+}
+.news-section h3 {
+	text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 1em;
     text-transform: none;
 }
 
@@ -143,7 +155,6 @@ a.link-to-book:hover {
 }
 
 .btn.btn-primary {
-    font-family: 'Big Shoulders Text', cursive;
     color: #ffffff;
     background-color: #95999e;
     text-transform: uppercase;
@@ -170,27 +181,6 @@ a.link-to-book:hover {
 .opening-time p span,
 .contact-adress p span {
     display: block;
-}
-
-@media screen and (max-width: 600px) {
-
-    .section-intro {
-        height: 500px;
-    }
-
-    .about-section p,
-    .about-section h3 {
-        font-size: 20px;
-    }
-
-    .carousel-inner {
-        height: auto;
-    }
-
-    .row-flex {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 @media screen and (max-width: 600px) {
