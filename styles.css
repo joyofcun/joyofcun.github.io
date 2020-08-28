@@ -253,7 +253,35 @@ a.link-to-book:hover {
 	  font-size: 10px;
   }
 
-  .input {
+  .input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
+
+  .input[type=name] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
+
+  .input[type=emailaddress] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
+
+  .input[type=number] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+  }
+  
+  .input[type=specialrequirementt] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
