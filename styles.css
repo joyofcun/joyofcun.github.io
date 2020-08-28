@@ -188,7 +188,11 @@ a.link-to-book:hover {
 
     .about-section {
         padding: 30px;
-    }
+	}
+	
+	.section-middle {
+		height: 300px
+	}
 
     .section-intro h1 {
         font-size: 2em;
