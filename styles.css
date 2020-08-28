@@ -237,10 +237,6 @@ a.link-to-book:hover {
         text-align: center;
 	}
 }
-*, *:after, *:before {
-	box-sizing: border-box;
-	font-family: Helvetica, Arial, sans-serif;
-  }
   
   .container {
 	width: 50%;
