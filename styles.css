@@ -206,7 +206,9 @@ a.link-to-book:hover {
         font-size: 2em;
     }
 
-    .about-section p,
+    .about-section p {
+		font-size: 10px;
+	}
     .about-section h3 {
         font-size: 15px;
     }
