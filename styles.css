@@ -211,14 +211,15 @@ a.link-to-book:hover {
         font-size: 15px;
     }
 
-    .carousel-inner {
-        height: auto;
-    }
-
     .row-flex {
         display: flex;
         flex-direction: column;
-    }
+	}
+	
+	.row-flex2 {
+		display: flexbox;
+		flex-wrap: wrap;
+	}
 
     .row-flex h3 {
         font-size: 25px;
@@ -253,7 +254,7 @@ a.link-to-book:hover {
 	margin: .7em 0 1em 0;
   }
 
-  .bookatable {
+  .flex-column-form2 {
 	width: 50%;
 	margin: 1em auto;
   }
