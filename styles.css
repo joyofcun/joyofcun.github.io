@@ -211,7 +211,8 @@ a.link-to-book:hover {
         text-align: center;
 	}
 	.menu {
-		height: 300px
+		max-width: 100%;
+        height: auto;
 	  }
 }
   
