@@ -220,6 +220,11 @@ a.link-to-book:hover {
 	width: 50%;
 	margin: 1em auto;
   }
+
+  .responsive {
+	max-width: 100%;
+	height: auto;
+  }
   
   .group-header {
 	float: right;
