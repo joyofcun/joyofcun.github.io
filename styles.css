@@ -254,6 +254,10 @@ a.link-to-book:hover {
 	box-sizing: border-box;
   }
   
+  .privacy {
+	  font-size: 10px;
+  }
+
   footer {
-	  font-size: 9px;
+	  text-align: center;
   }
