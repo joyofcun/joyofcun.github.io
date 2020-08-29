@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Joy of Cun</title>
+
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+    </script>
+     
+  </head>
+  <body>
+     
+    <nav>
+      <ul class="nav-flex-row">
+        <li class="nav-item">
+          <a href="/reservation.html">Reservation</a>
+        </li>
+        <li class="nav-item">
+          <a href="/menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="/index.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+  <section class="section-intro">
+    <header>
+      <h1>
+      <p>Delivering Wow</p>
+      <p>Sharing Happiness</p>
+    </h1>
+    </header>
+    <div class="link-to-book-wrapper">
+      <a class="link-to-book" href="#reservations">Book a table</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <article>
+      <h3>Contact Us</h3>
+      <p>Please fill up the form bellow to reserve a table at our restaurant.
+          Our staff will contact you to confirm the details 1 day before your choosen date.
+          If you have a trouble for booking table, please call us directly.</p>
+    </article>
+  </section>
+
+  <div class="bookatable">
+        <form class="media-centered">
+          <div class="form-group">
+            <p>
+               Customer Name
+            </p>
+            <p>
+                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+            </p>
+            <p>
+                Email Address:
+            </p>
+            <p>
+                <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="emailaddressHelp">
+            </p>
+            <p>
+                Phone Number:
+            </p>
+            <p>
+                <input type="text" class="form-control" id="exampleInputphoneNumber1">
+            </p>
+            <p>
+                Special Requirements:
+            </p>
+            <p>
+                If you have any specific requests, please write here. Example: allergy, request for seats, baby chair etc
+            </p>
+            <p>
+                *Please note that we may not be able to accept all of your requests (ex. Booking a private room, table requests etc).
+                For those requests, please kindly contact us for prior checking.
+            </p>
+            <p>
+                <input type="text" class="form-control" id="examplespecial" aria-describedby="specialHelp">
+            </p>
+            <p>
+                Date:
+            </p>
+            <p>
+                <input type="text" id="datepicker">
+            </p>
+            <p>
+                Time:
+            </p>
+            <p>
+                <input type="text" class="form-control" id="exampletime" aria-describedby="timeHelp">
+            </p>
+          </div>   
+          <p>   
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </p>
+      </form>
+    </div>
+ 
+  </body>
+
+  <footer>
+    <p>© Haukai Restaurant 2020<br>
+  </footer>
+  
+</html> 
