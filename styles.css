@@ -235,6 +235,7 @@ a.link-to-book:hover {
 
   .container {
 	  align-items: center;
+	  text-align: center;
   }
 
   .bookatable {
