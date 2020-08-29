@@ -254,3 +254,6 @@ a.link-to-book:hover {
 	box-sizing: border-box;
   }
   
+  footer {
+	  font-size: 7px;
+  }
