@@ -123,7 +123,7 @@ a.link-to-book:hover {
 }
 
 .form-group p {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .opening-time p span,
@@ -145,10 +145,10 @@ a.link-to-book:hover {
 	}
 
     .about-section p {
-		font-size: 10px;
+		font-size: 15px;
 	}
     .about-section h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .row-flex {
@@ -161,12 +161,12 @@ a.link-to-book:hover {
     }
 
     .opening-time p {
-		font-size: 10px;
+		font-size: 15px;
         text-align: center;
     }
     
     .opening-time h3 {
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
     }
 	.menu {
@@ -176,8 +176,8 @@ a.link-to-book:hover {
 }
   
   .menu {
-	width: 80%;
-	margin: 1em auto;
+	width: 50%;
+	margin: 1.3em auto;
   }
 
   .responsive {
