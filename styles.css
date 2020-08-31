@@ -1,6 +1,3 @@
-
-/* font-family: 'Big Shoulders Text', cursive; */
-
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -22,7 +19,7 @@ li a {
 	text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
+  /* Change the link color on hover */
 li a:hover {
 	background-color: rgb(219, 219, 219);
   }
@@ -57,31 +54,6 @@ li a:hover {
     flex: 1;
 }
 
-.section-middle {
-    height: 820px;
-    background-image: url(Assets/Cheese-Salad-Goat-Cheese-Starter-Figs-Food-1672505.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-middle h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 4em;
-    font-weight: 700;
-}
-
-.section-middle header {
-    display: flex;
-    flex: 4;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .about-section {
     display: flex;
     align-items: center;
@@ -105,16 +77,16 @@ a.link-to-book:hover {
 
 .about-section p {
 	text-align: center;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-transform: none;
 }
 .about-section h3 {
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    font-size: 1.9em;
+    font-size: 2em;
     text-transform: none;
 }
 
@@ -147,7 +119,7 @@ a.link-to-book:hover {
 .contact-adress {
     flex: 1;
     margin: 30px 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .form-group p {
@@ -163,10 +135,6 @@ a.link-to-book:hover {
     .section-intro {
         height: 300px;
 	}
-	
-	.section-middle {
-		height: 300px;
-	}
 
     .about-section {
         padding: 30px;
@@ -174,10 +142,6 @@ a.link-to-book:hover {
 
     .section-intro h1 {
         font-size: 2em;
-	}
-	
-	.section-middle h1 {
-		font-size: 2em;
 	}
 
     .about-section p {
@@ -191,25 +155,20 @@ a.link-to-book:hover {
         display: flex;
         flex-direction: column;
 	}
-	
-	.row-flex2 {
-		display: flexbox;
-		flex-wrap: wrap;
-	}
-
-    .row-flex h3 {
-        font-size: 25px;
-        text-align: center;
-    }
 
     .form-group p {
         font-size: 15px;
     }
 
     .opening-time p {
-		font-size: 15px;
+		font-size: 10px;
         text-align: center;
-	}
+    }
+    
+    .opening-time h3 {
+        font-size: 15px;
+        text-align: center;
+    }
 	.menu {
 		max-width: 100%;
         height: auto;
@@ -217,7 +176,7 @@ a.link-to-book:hover {
 }
   
   .menu {
-	width: 50%;
+	width: 80%;
 	margin: 1em auto;
   }
 
