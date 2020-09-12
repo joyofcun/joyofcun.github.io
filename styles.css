@@ -24,10 +24,10 @@ li a:hover {
 	background-color: rgb(219, 219, 219);
   }
 
-
+ /* Create a section for hero banner for all pages */
 .section-intro {
     height: 820px;
-    background-image: url(Assets/Lunch-Salad-Restaurant-Food-Fish-Dinner-Salmon-691397.jpg);
+    background-image: url(Assets/hero.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,62 @@ a.link-to-book:hover {
 .contact-adress p span {
     display: block;
 }
+  
+.menu {
+    width: 50%;
+	margin: 1.3em auto;
+}
 
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+  
+.group-header {
+	float: right;
+	font-weight: 700;
+	width: 20%;
+    margin: .7em 0 1em 0;
+}
+  
+.container h3 {
+	position: relative;
+	font-weight: 700;
+	margin: .7em 0 1em 0;
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+}
+
+.bookatable {
+	width: 50%;
+	margin: 1em auto;
+}
+
+.bookatable h3 {
+	font-size: 20px;
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+  
+.privacy {
+	font-size: 11px;
+}
+
+footer {
+	text-align: center;
+	align-items: center;
+}
+
+
+ /* Responsive for small screens */
 @media screen and (max-width: 600px) {
     .section-intro {
         height: 300px;
@@ -174,56 +229,3 @@ a.link-to-book:hover {
         height: auto;
 	  }
 }
-  
-  .menu {
-	width: 50%;
-	margin: 1.3em auto;
-  }
-
-  .responsive {
-	max-width: 100%;
-	height: auto;
-  }
-  
-  .group-header {
-	float: right;
-	font-weight: 700;
-	width: 20%;
-	margin: .7em 0 1em 0;
-  }
-  
-  .container h3 {
-	position: relative;
-	font-weight: 700;
-	margin: .7em 0 1em 0;
-  }
-
-  .container {
-	  align-items: center;
-	  text-align: center;
-  }
-
-  .bookatable {
-	width: 50%;
-	margin: 1em auto;
-  }
-
-  .bookatable h3 {
-	  font-size: 20px;
-  }
-
-  input {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-  }
-  
-  .privacy {
-	  font-size: 11px;
-  }
-
-  footer {
-	  text-align: center;
-	  align-items: center;
-  }
