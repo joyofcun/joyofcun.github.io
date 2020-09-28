@@ -188,9 +188,17 @@ table, th, td {
     border: 0.5px solid rgb(82, 82, 82);
     text-align: center;
     align-items: center;
-    width: 80%
   }
 
+.roster {
+    width: 50%;
+	margin: 1em auto;
+}
+
+.staffcontact {
+    width: 50%;
+	margin: 1em auto;
+}
 
  /* Responsive for small screens */
 @media screen and (max-width: 600px) {
