@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Reservation</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Class Roster</title>
-    <!--Link bootstrap, jQuery and your custom JS file.-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="roster.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
      
@@ -51,42 +45,69 @@
     </article>
   </section>
 
-  <div class="container">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4" style="text-align:center">Class Roster</h1>
-        </div>
-    </div>
-    <!--Create a row for placing card and input fields.-->
-    <div class="row">
-        <div class="col col-lg-6">
-            <div class="card" >
-                <div class="card-header">
-                    Roster
-                </div>
-                <ul class="list-group list-group-flush" id="rosterList">
-                    <li class="list-group-item">Cras justo odio</li>
-                </ul>
+  <header>
+    <h1>
+      Sharks Roster
+    </h1>
+  </header>
+  <div class="roster">
 
-            </div>
-            <div>
-                <button class="btn btn-primary" id="helloButton">Say Hello</button>
-            </div>
+    <!-- announcements -->
+    <details open>
+      <summary class="announcements">
+        <span class="title">Announcements</span>
+      </summary>
+      <div class="signup">Session: 22 June, 2019</div>
+      <div class="signup">Training begins at 6:10pm.  Be ready to play by 6:05pm.  Arrive early you need loan kit.</div>
+      <div class="signup">The roster closes at 3pm on Saturday.  Teams are announced shortly after.</div>
+    </details>
+    
+    <!-- amber, attending and can remove -->
+    <details class="player">
+      <summary class="player-info">
+        <span class="name">GORE, Christopher Julian John Brian</span>
+        <span class="badge play8">8</span>
+        <span class="badge attending">55</span>
+      </summary>
+      <div class="signup amber"></div>
+    </details>
+
+    <!-- green, absent and can add -->
+    <details class="player">
+      <summary class="player-info">
+        <span class="name">WEBB, Phillip</span>
+        <span class="badge play8"></span>
+        <span class="badge absent">81</span>
+      </summary>
+      <div class="signup green">
+        <div class="form-elements">
+          <input class="email" type="email">
+          <button class="submit">&#x2794;</button>
         </div>
-        <div class="col col-lg-6">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Student Name</span>
-                </div>
-                <input type="text" id="rosterInput" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <button type="button" id="submitButton" class="btn btn-primary">Submit</button>
-            </div>
+      </div>
+    </details>
+
+    <!-- red/amber, absent, can add soon -->
+    <details class="player">
+      <summary class="player-info">
+        <span class="name">COLLINS, Robert</span>
+        <span class="badge play8"></span>
+        <span class="badge absent">06</span>
+      </summary>
+      <div class="signup red-amber">
+        <!--
+          <div style="display: flex; margin: 10px 0;">
+          <input style="width: 100%; padding: 8px; font-size: 16px;" type="email">
+          <button style="background: #555555; border: none; color: white; font-size: 16px; padding: 0 12px">Submit</button>
+        -->
         </div>
-    </div>
+      </div>
+    </details>
+
+  </div>
 
   </body>
-
+  <script src="roster.js"></script>
   <footer>
       <br>
     <p>© Haukai Restaurant 2020<br>

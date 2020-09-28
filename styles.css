@@ -229,3 +229,162 @@ footer {
         height: auto;
 	  }
 }
+
+
+
+
+  body
+  {
+    background-color: #3e3e3e;
+    color: white;
+    font-family: 'Ubuntu Condensed';
+    font-size: 150%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  details
+  {
+    border-bottom: 1px dotted darkgrey;
+    padding: 0px 6px;
+    transition-duration: 4ms;
+  }
+  
+  details summary::-webkit-details-marker
+  {
+    display:none;
+  }
+  
+  summary
+  {
+    outline: none;
+    user-select: none;
+    cursor: default;
+    margin: 16px 0; /* height of each collapsible element */
+  }
+  
+  h1
+  {
+    text-align: center;
+    color: #ffd700;
+    border-bottom: 1px dotted #ffd700;
+    margin: 0px;
+    padding: 16px 0px;
+    font-family: 'Ubuntu Condensed';
+    font-size: 200%;
+  }
+  
+  .announcements
+  {
+    display: flex;
+    /*background: red;*/
+    margin: 14px 6px;
+    height: 46px;
+  }
+  
+  .announcements .title
+  {
+    color: #ffd700;
+    margin: auto 0px;
+    text-transform: uppercase;
+  }
+  
+  .player-info
+  {
+    display: flex;
+    /*background: red;*/
+    margin: 14px 6px;
+  }
+  
+  .name
+  {
+    margin: auto;
+    width: calc(100% - 92px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .badge
+  {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    border-radius: 20%;
+    font-weight: 500;
+    font-family: Ubuntu;
+    display: inline-block;
+    padding: 9px 0px; /* badge height is 42px */
+  }
+  
+  .play8
+  {
+    color: #ffd700;
+  }
+  
+  .signup
+  {
+    /*margin: 0 6px 10px 6px;*/
+    margin: 12px 6px;
+    font-family: Ubuntu;
+    font-size: smaller;
+  }
+  
+  .form-elements
+  {
+    display: flex;
+    margin: 6px 0px;
+  }
+  
+  .email
+  {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .submit
+  {
+    background: #555;
+    border: none;
+    color: white;
+    font-size: 32px;
+  }
+  
+  .absent
+  {
+    /*color: #ffd700;*/
+    background: crimson;
+    color: #fff;
+  }
+  
+  .attending
+  {
+    /*color: #3e3e3e;
+    background: #ffd700;*/
+    background: yellowgreen;
+    color: #3e3e3e;
+    font-weight: 700;
+  }
+  
+  .red::before
+  {
+    content: "Roster is closed";
+  }
+  
+  .green:before
+  {
+    content: "Absent, sign up now";
+  }
+  
+  .amber:before
+  {
+    content: "Attending";
+  }
+  
+  .red-amber:before
+  {
+    content: "Absent, sign up Wednesday";
+  }
+  
+
