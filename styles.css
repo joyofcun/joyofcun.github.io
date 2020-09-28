@@ -184,6 +184,13 @@ footer {
 	align-items: center;
 }
 
+table, th, td {
+    border: 1px solid rgb(82, 82, 82);
+    text-align: center;
+    align-items: center;
+    font-size: 1.3em;
+  }
+
 
  /* Responsive for small screens */
 @media screen and (max-width: 600px) {
