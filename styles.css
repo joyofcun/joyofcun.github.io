@@ -188,6 +188,8 @@ table, th, td {
     border: 0.5px solid rgb(82, 82, 82);
     text-align: center;
     align-items: center;
+    padding: 12px 20px;
+	margin: 8px 0;
   }
 
 .roster {
