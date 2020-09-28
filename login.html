@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Reservation</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,500,700&display=swap" rel="stylesheet">
+    <title>Work Roster</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
   <body>
      
@@ -45,69 +48,73 @@
     </article>
   </section>
 
-  <header>
-    <h1>
-      Sharks Roster
-    </h1>
-  </header>
-  <div class="roster">
-
-    <!-- announcements -->
-    <details open>
-      <summary class="announcements">
-        <span class="title">Announcements</span>
-      </summary>
-      <div class="signup">Session: 22 June, 2019</div>
-      <div class="signup">Training begins at 6:10pm.  Be ready to play by 6:05pm.  Arrive early you need loan kit.</div>
-      <div class="signup">The roster closes at 3pm on Saturday.  Teams are announced shortly after.</div>
-    </details>
+  <section class="about-section">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
     
-    <!-- amber, attending and can remove -->
-    <details class="player">
-      <summary class="player-info">
-        <span class="name">GORE, Christopher Julian John Brian</span>
-        <span class="badge play8">8</span>
-        <span class="badge attending">55</span>
-      </summary>
-      <div class="signup amber"></div>
-    </details>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+      
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </section>
 
-    <!-- green, absent and can add -->
-    <details class="player">
-      <summary class="player-info">
-        <span class="name">WEBB, Phillip</span>
-        <span class="badge play8"></span>
-        <span class="badge absent">81</span>
-      </summary>
-      <div class="signup green">
-        <div class="form-elements">
-          <input class="email" type="email">
-          <button class="submit">&#x2794;</button>
-        </div>
-      </div>
-    </details>
 
-    <!-- red/amber, absent, can add soon -->
-    <details class="player">
-      <summary class="player-info">
-        <span class="name">COLLINS, Robert</span>
-        <span class="badge play8"></span>
-        <span class="badge absent">06</span>
-      </summary>
-      <div class="signup red-amber">
-        <!--
-          <div style="display: flex; margin: 10px 0;">
-          <input style="width: 100%; padding: 8px; font-size: 16px;" type="email">
-          <button style="background: #555555; border: none; color: white; font-size: 16px; padding: 0 12px">Submit</button>
-        -->
-        </div>
-      </div>
-    </details>
-
-  </div>
 
   </body>
-  <script src="roster.js"></script>
+
   <footer>
       <br>
     <p>© Haukai Restaurant 2020<br>
