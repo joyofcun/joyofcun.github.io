@@ -1,123 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Work Roster</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head> 
+  <meta charset="UTF-8"> 
+  <title>TimeTableIPL</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  </head>
-  <body>
-     
-    <nav>
-      <ul class="nav-flex-row">
-        <li class="nav-item">
-          <a href="/login.html">Log In</a>
-        </li>
-        <li class="nav-item">
-          <a href="/reservation.html">Reservation</a>
-        </li>
-        <li class="nav-item">
-          <a href="/menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a href="/index.html">Home</a>
-        </li>
-      </ul>
-    </nav>
-
-  <section class="section-intro">
-    <header>
-      <h1>
-      <p>Want to skip</p>
-      <p>the queue?</p>
-    </h1>
-    </header>
-  </section>
-
-  <section class="about-section">
-    <article>
-      <h3>Book a Table</h3>
-      <p>Please fill up the form bellow to reserve a table at our restaurant.
-          Our staff will contact you to confirm the details 1 day before your choosen date.
-          If you have a trouble for booking table, please call us directly.</p>
-    </article>
-  </section>
-
-  <section class="about-section">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-    
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+<body>
+  <div class="jumbotron"> 
+    <div class="container text-center"> 
+      <h2>Horaire IPL 3e</h2> 
+      <p>Sélectionnez les paramètres qui correspondent à votre situation</p>
+    </div>
+  </div>
+  <div class="container"> 
+    <form> 
+      <table class="table table-responsive"> 
+        <thead> 
+          <tr> 
+            <th>Série</th> 
+            <th>Options :</th> 
+            <th>Semaine : </th> 
+          </tr>
+        </thead> 
+        <tbody> 
+          <tr> 
+            <td> 
+              <div class="checkbox"> 
+                <label>
+                  <input type="checkbox" class="options" value="I1">Série 1
+                </label> 
+                </div>
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="I2">Série 2
+                  </label> 
+                </div>
+              </td>
+              <td> 
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="IA">Intelligence Artificielle
+                  </label> 
+                </div>
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="MIC">Outils Microsoft
+                  </label> 
+                </div>
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="UN">Unity
+                  </label> 
+                </div>
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="SAP">Progiciel de gestion (SAP)
+                  </label> 
+                </div>
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="WEB">Compléments WEB
+                  </label> 
+                </div>
+                <div class="checkbox"> 
+                  <label>
+                    <input type="checkbox" class="options" value="GESTION_ENT"> Gestion (création entreprise)
+                  </label> 
+                </div>
+              </td>
+              <td> 
+                <div class="radio"> 
+                  <label>
+                    <input type="radio" name="semaine" value="1" checked="checked" > Semaine 1 : 19 - 23 septembre 
+                  </label> 
+                </div>
+                <div class="radio"> 
+                  <label>
+                    <input type="radio" name="semaine" value="2"> Semaine 2 : 26 - 30 septembre 
+                  </label> 
+                </div>
+                <div class="radio"> 
+                  <label>
+                    <input type="radio" name="semaine" value="3"> Semaine 3 : 3 - 7 octobre 
+                  </label> 
+                </div>
+                <div class="radio"> <label><input type="radio" name="semaine" value="4"> Semaine 4 : 10 - 14 octobre 
+                </label> 
+              </div>
+              <div class="radio"> 
+                <label>
+                  <input type="radio" name="semaine" value="5"> Semaine 5 : 17 - 21 octobre 
+                </label> 
+              </div>
+              <div class="radio"> 
+                <label>
+                  <input type="radio" name="semaine" value="6"> Semaine 6 : 24 - 28 octobre 
+                </label> 
+              </div>
+              <div class="radio"> 
+                <label>
+                  <input type="radio" name="semaine" value="7"> Semaine 7 : 7- 11 novembre 
+                </label> 
+              </div>
+              <div class="radio"> <label><input type="radio" name="semaine" value="8"> Semaine 8 : 14-18 novembre 
+              </label> 
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-      
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </section>
+            <div class="radio"> 
+              <label>
+                <input type="radio" name="semaine" value="9"> Semaine 9 : 21-25 novembre 
+              </label> 
+            </div>
+            <div class="radio"> 
+              <label>
+                <input type="radio" name="semaine" value="10"> Semaine 10 : 28 novembre - 2 décembre 
+              </label> 
+            </div>
+            <div class="radio"> 
+              <label><input type="radio" name="semaine" value="11"> Semaine 11 : 5-9 décembre 
+              </label> 
+            </div>
+            <div class="radio"> <label><input type="radio" name="semaine" value="12"> Semaine 12 : 12-16 décembre 
+            </label> 
+          </div>
+          <div class="radio"> 
+            <label>
+              <input type="radio" name="semaine" value="13"> Semaine 13 : 19-23 décembre 
+            </label> 
+          </div>
+        </td>
+      </tr>
+    </tbody> 
+  </table> 
+</form>
+<div class="Timetable table-responsive"> 
+  <table class="Timetable__table table table-bordered"> 
+    <thead> 
+      <tr> 
+        <th colspan="17">Horaire IPL 3e</th> 
+      </tr>
+    </thead> 
+    <tbody> 
+      <tr class="Timetable__time"> 
+        <th class="Timetable__room"></th> 
+        <th>08:00</th> 
+        <th>08:30</th> 
+        <th>09:30</th> 
+        <th>10:00</th> 
+        <th>10:30</th> 
+        <th>10:45</th> 
+        <th>12:45</th> 
+        <th>13:15</th> 
+        <th>13:45</th> 
+        <th>15:45</th> 
+        <th>16:00</th> 
+        <th>17:00</th> 
+        <th>17:15</th> 
+        <th>18:00</th>
+        <th>18:30</th> 
+        <th>19:00</th> 
+      </tr>
+      <tr> 
+        <th class="Timetable__room">LUNDI</th> 
+      </tr>
+      <tr> 
+        <th class="Timetable__room">MARDI</th> 
+      </tr>
+      <tr> 
+        <th class="Timetable__room">MERCREDI</th> 
+      </tr>
+      <tr> 
+        <th class="Timetable__room">JEUDI</th> 
+      </tr>
+      <tr> 
+        <th class="Timetable__room">VENDREDI</th> 
+      </tr>
+    </tbody> 
+  </table> 
+</div>
+</div>
 
+</body>
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="roster.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  </body>
-
-  <footer>
-      <br>
-    <p>© Haukai Restaurant 2020<br>
-  </footer>
-  
-</html> 
+</html>
