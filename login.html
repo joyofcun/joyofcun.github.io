@@ -46,44 +46,33 @@
   } );
   </script>
 
-  <!-- Datatable CSS -->
   <link href='//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
-
-  <!-- jQuery UI CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-
-  <!-- jQuery Library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- jQuery UI JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-  <!-- Datatable JS -->
   <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
   <script>
     $(document).ready(function(){
 
-// Datapicker 
-$( ".datepicker" ).datepicker({
-   "dateFormat": "yy-mm-dd"
-});
+    // Datapicker 
+    $( ".datepicker" ).datepicker({"dateFormat": "yy-mm-dd"});
 
-// DataTable
-var dataTable = $('#empTable').DataTable({
-  'processing': true,
-  'serverSide': true,
-  'serverMethod': 'post',
-  'searching': true, // Set false to Remove default Search Control
-  'ajax': {
+    // DataTable
+    var dataTable = $('#empTable').DataTable({
+    'processing': true,
+    'serverSide': true,
+    'serverMethod': 'post',
+    'searching': true, // Set false to Remove default Search Control
+    'ajax': {
     'url':'ajaxfile.php',
     'data': function(data){
-       // Read values
-       var from_date = $('#search_fromdate').val();
-       var to_date = $('#search_todate').val();
+    // Read values
+    var from_date = $('#search_fromdate').val();
+    var to_date = $('#search_todate').val();
 
-       // Append to data
-       data.searchByFromdate = from_date;
-       data.searchByTodate = to_date;
+    // Append to data
+    data.searchByFromdate = from_date;
+    data.searchByTodate = to_date;
     }
   },
   'columns': [
@@ -114,8 +103,8 @@ $('#btn_search').click(function(){
         <option value="room2">Kellie, S, 2</option>
         <option value="room3">Kellie, S, 3</option>
         <option value="room4">Kellie, S, 4</option></select></p>
-    <p><span>Checkin date:</span><input class="makeabooking" type="text" name="checkin_date" placeholder="yyyy-mm-dd" id="from" required/></p>
-    <p><span>Checkout date:</span><input class="makeabooking" type="text" name="checkout_date" placeholder="yyyy-mm-dd" id="to" required/></p>
+    <p><span>Checkin date:</span><input class="datepicker" type="text" name="checkin_date" placeholder="yyyy-mm-dd" id="from" required/></p>
+    <p><span>Checkout date:</span><input class="datepicker" type="text" name="checkout_date" placeholder="yyyy-mm-dd" id="to" required/></p>
     <p><span>Contact number:</span><input class="makeabooking" type="tel" name="contact_number" placeholder="(###) ### ####" pattern="([0-9]{3}) [0-9]{3} [0-9]{4}" required></p>
     <p><span>Booking extras:</span><textarea class="makeabooking textarea" rows="8" cols="50" name="booking_extras"></textarea></p>
     <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="Submit"/>  </p>
