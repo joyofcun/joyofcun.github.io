@@ -60,6 +60,47 @@
 
   <!-- Datatable JS -->
   <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+// Datapicker 
+$( ".datepicker" ).datepicker({
+   "dateFormat": "yy-mm-dd"
+});
+
+// DataTable
+var dataTable = $('#empTable').DataTable({
+  'processing': true,
+  'serverSide': true,
+  'serverMethod': 'post',
+  'searching': true, // Set false to Remove default Search Control
+  'ajax': {
+    'url':'ajaxfile.php',
+    'data': function(data){
+       // Read values
+       var from_date = $('#search_fromdate').val();
+       var to_date = $('#search_todate').val();
+
+       // Append to data
+       data.searchByFromdate = from_date;
+       data.searchByTodate = to_date;
+    }
+  },
+  'columns': [
+     { data: 'roomID' },
+     { data: 'roomname' },
+     { data: 'roomtype' },
+     { data: 'beds' },
+  ]
+});
+
+// Search button
+$('#btn_search').click(function(){
+  dataTable.draw();
+});
+
+});
+  </script>
 </head>
 
 <h1>Make a booking</h1>
