@@ -58,9 +58,9 @@
         <option value="room2">Kellie, S, 2</option>
         <option value="room3">Kellie, S, 3</option>
         <option value="room4">Kellie, S, 4</option></select></p>
-    <p><span>Checkin date:</span><input class="makeabooking" type="date" name="checkin_date" value="yyyy-mm-dd" id="from" required/></p>
-    <p><span>Checkout date:</span><input class="makeabooking" type="date" name="checkout_date" value="yyyy-mm-dd" id="to" required/></p>
-    <p><span>Contact number:</span><input class="makeabooking" type="number" name="contact_number" value="(###) ### ####" required></p>
+    <p><span>Checkin date:</span><input class="makeabooking" type="date" name="checkin_date" placeholder="yyyy-mm-dd" id="from" required/></p>
+    <p><span>Checkout date:</span><input class="makeabooking" type="date" name="checkout_date" placeholder="yyyy-mm-dd" id="to" required/></p>
+    <p><span>Contact number:</span><input class="makeabooking" type="number" name="contact_number" placeholder="(###) ### ####" required></p>
     <p><span>Booking extras:</span><textarea class="makeabooking textarea" rows="8" cols="50" name="booking_extras"></textarea></p>
     <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="Submit"/>  </p>
     <a href="/mainpage.html">[Cancel]</a>
@@ -69,8 +69,8 @@
 
 <h1>Search for room availability</h1>
 <form method="post" action="#" id="search_form">
-<p><span>Checkin date:</span><input class="searchroom" type="date" name="start_Date" value="yyyy-mm-dd" id="from" required/>
-<span>Checkout date:</span><input class="searchroom" type="date" name="end_Date" value="yyyy-mm-dd" id="to" required/>
+<p><span>Checkin date:</span><input class="searchroom" type="date" name="start_Date" placeholder="yyyy-mm-dd" id="from" required/>
+<span>Checkout date:</span><input class="searchroom" type="date" name="end_Date" placeholder="yyyy-mm-dd" id="to" required/>
 <p style="padding-top: 15px"><span>&nbsp;</span><input class="search" type="search" name="search_button" value="Search"/>  </p>
 </form>
 
