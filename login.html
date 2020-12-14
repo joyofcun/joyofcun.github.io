@@ -3,113 +3,26 @@
   
 
 <head>
-  <title>Make a booking</title>
+  <title>Booking Details View</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
-
-  <link href='//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-  <script>
-    $(document).ready(function(){
-
-    // Datapicker 
-    $( ".datepicker" ).datepicker({"dateFormat": "yy-mm-dd"});
-
-    // DataTable
-    var dataTable = $('#empTable').DataTable({
-    'processing': true,
-    'serverSide': true,
-    'serverMethod': 'post',
-    'searching': true, // Set false to Remove default Search Control
-    'ajax': {
-    'url':'ajaxfile.php',
-    'data': function(data){
-    // Read values
-    var from_date = $('#search_fromdate').val();
-    var to_date = $('#search_todate').val();
-
-    // Append to data
-    data.searchByFromdate = from_date;
-    data.searchByTodate = to_date;
-    }
-  },
-  'columns': [
-     { data: 'roomID' },
-     { data: 'roomname' },
-     { data: 'roomtype' },
-     { data: 'beds' },
-  ]
-});
-
-// Search button
-$('#btn_search').click(function(){
-  dataTable.draw();
-});
-
-});
-  </script>
 </head>
 
-<h1>Make a booking</h1>
-<a href="/booking.html">[Return to the Bookings listing]</a>
+<h1>Booking Details View</h1>
+<a href="/booking.html">[Return to the booking listing]</a>
 <a href="/mainpage.html">[Return to the Main Page]</a>
-<p>Booking for Test:</p>
-<form action="#" method="post">
-  <div class="form_settings">
-    <p><span>Room (name,type,beds):</span><select id="makeabooking" name="makeabooking" required>
-        <option value="room1">Kellie, S, 1</option>
-        <option value="room2">Kellie, S, 2</option>
-        <option value="room3">Kellie, S, 3</option>
-        <option value="room4">Kellie, S, 4</option></select></p>
-    <p><span>Checkin date:</span><input class="datepicker" type="text" name="checkin_date" placeholder="yyyy-mm-dd" id="from" required/></p>
-    <p><span>Checkout date:</span><input class="datepicker" type="text" name="checkout_date" placeholder="yyyy-mm-dd" id="to" required/></p>
-    <p><span>Contact number:</span><input class="makeabooking" type="tel" name="contact_number" placeholder="(###) ### ####" pattern="([0-9]{3}) [0-9]{3} [0-9]{4}" required></p>
-    <p><span>Booking extras:</span><textarea class="makeabooking textarea" rows="8" cols="50" name="booking_extras"></textarea></p>
-    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="Submit"/>  </p>
-    <a href="/mainpage.html">[Cancel]</a>
-  </div>
-</form>
+<p></p>
+<fieldset style="border: 1px black solid">
 
-<h1>Search for room availability</h1>
-<div >
-  <!-- Date Filter -->
-  <table>
-    <tr>
-      <td>
-         <input type='text' readonly id='search_fromdate' class="datepicker" placeholder='From date'>
-      </td>
-      <td>
-         <input type='text' readonly id='search_todate' class="datepicker" placeholder='To date'>
-      </td>
-      <td>
-         <input type='button' id="btn_search" value="Search">
-      </td>
-    </tr>
-  </table>
-
-  <!-- Table -->
-  <table id='roomavail' class='display dataTable'>
-    <thead>
-      <tr>
-        <tr>
-          <th>Room #</th>
-          <th>Room Name</th>
-          <th>Room Type</th>
-          <th>Beds</th>
-        </tr>
-      </tr>
-    </thead>
-
-  </table>
-</div>
-
+    <legend style="border: 1px black solid;margin-left: 1em; padding: 0.2em 0.8em ">Room detail #2</legend>
+    <form action="insert.php" method="post">
+        Room Name: <input type="text" name = "roomname" /><br/>
+        Checkin date: <input type="date" name = "checkin_date" /><br/>
+        Checkout date: <input type="date" name = "checkout_date" /><br/>
+        Contact number: <input type="tel" name = "contact_number" /><br/>
+        Booking extras: <input type="text" name = "booking_extras" /><br/>
+        Room Review: <input type="text" name = "roomreview" /><br/>
+    </form> 
+</fieldset>
