@@ -3,26 +3,107 @@
   
 
 <head>
-  <title>Booking preview before deletion</title>
+  <title>Make a booking</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 3
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 3
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
+  </script>
 </head>
 
-<h1>Booking preview before deletion</h1>
-<a href="/booking.html">[Return to the booking listing]</a>
+<h1>Make a booking</h1>
+<a href="/booking.html">[Return to the Bookings listing]</a>
 <a href="/mainpage.html">[Return to the Main Page]</a>
-<p></p>
-<fieldset style="border: 1px black solid">
+<p>Booking for Test:</p>
+<form action="#" method="post">
+  <div class="form_settings">
+    <p><span>Room (name,type,beds):</span></p><select id="makeabooking" name="makeabooking">
+        <option value="room1">Kellie, S, 1</option>
+        <option value="room2">Kellie, S, 2</option>
+        <option value="room3">Kellie, S, 3</option>
+        <option value="room4">Kellie, S, 4</option></select>
+    <p><span>Checkin date:</span><input class="makeabooking" type="text" name="checkin_date" value="yyyy-mm-dd" id="from"/></p>
+    <p><span>Checkout date:</span><input class="makeabooking" type="text" name="checkout_date" value="yyyy-mm-dd" id="to"/></p>
+    <p><span>Contact number:</span><input class="makeabooking" type="text" name="contact_number" value="(###) ### ####"></p>
+    <p><span>Booking extras:</span><textarea class="makeabooking textarea" rows="8" cols="50" name="booking_extras"></textarea></p>
+    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="Submit"/>  </p>
+    <a href="/mainpage.html">[Cancel]</a>
+  </div>
+</form>
 
-    <legend style="border: 1px black solid;margin-left: 1em; padding: 0.2em 0.8em ">Room detail #2</legend>
+<h1>Search for room availability</h1>
+<form method="post" action="#" id="search_form">
+<p><span>Checkin date:</span><input class="searchroom" type="text" name="start_Date" value="yyyy-mm-dd" id="from"/>
+<span>Checkout date:</span><input class="searchroom" type="text" name="end_Date" value="yyyy-mm-dd" id="to"/>
+<p style="padding-top: 15px"><span>&nbsp;</span><input class="search" type="search" name="search_button" value="Search"/>  </p>
+</form>
 
-    <p>Room name:</p>
-    <p>Checkin date:</p>
-    <p>Checkout date:</p>
-    
-</fieldset>
-<p>Are you sure you want to delete this Booking</p>
-<p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="Submit"/>  
-<a href="/mainpage.html">[Cancel]</a></p>
+
+<table>
+  <tr>
+    <th>Room #</th>
+    <th>Room Name</th>
+    <th>Room Type</th>
+    <th>Beds</th>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Herman</td>
+    <td>D</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Scarlett</td>
+    <td>D</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Jelani</td>
+    <td>S</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Sonya</td>
+    <td>S</td>
+    <td>5</td>
+  </tr>
+</table>
