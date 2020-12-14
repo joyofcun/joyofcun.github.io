@@ -53,12 +53,18 @@
 <p>Booking for Test:</p>
 <form action="#" method="post">
   <div class="form_settings">
-    <p><span>Room (name,type,beds)</span><input class="makeabooking" type="text" name="your_name" value="" /></p>
+    <p><span>Room (name,type,beds):</span><input class="makeabooking" type="" name="your_name"/></p>
+        <select id="makeabooking" name="makeabooking">
+        <option value="Kellie, S, 5">Volvo</option>
+        <option value="Kellie, S, 5">Saab</option>
+        <option value="Kellie, S, 5">Fiat</option>
+        <option value="Kellie, S, 5">Audi</option>
+        </select>
     <p><span>Checkin date:</span><input class="makeabooking" type="text" name="checkin_date" value="yyyy-mm-dd" id="from"/></p>
     <p><span>Checkout date:</span><input class="makeabooking" type="text" name="checkout_date" value="yyyy-mm-dd" id="to"/></p>
-    <p><span>Contact number</span><input class="makeabooking" type="text" name="contact_number" value="(###) ### ####" >/></p>
+    <p><span>Contact number:</span><input class="makeabooking" type="text" name="contact_number" value="(###) ### ####" >/></p>
     <p><span>Booking extras:</span><textarea class="makeabooking textarea" rows="8" cols="50" name="booking_extras"></textarea></p>
-    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="submit" /> Submit </p>
+    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="makeabooking_submitted" value="Submit"/>  </p>
     <a href="/mainpage.html">[Cancel]</a>
   </div>
 </form>
